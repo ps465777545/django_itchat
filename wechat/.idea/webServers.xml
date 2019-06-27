@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="60ff3489-1d20-46ac-94af-f3cac95e3aa5" name="weixin" url="http://192.168.1.55">
+        <fileTransfer host="192.168.1.55" port="22" rootFolder="/opt/wechat" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3f49bf6a-368c-4b51-9212-fb1b21e85c2a" name="wechar" url="http://120.131.8.160">
+        <fileTransfer host="120.131.8.160" port="12345" rootFolder="/opt/wechat" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="12345" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

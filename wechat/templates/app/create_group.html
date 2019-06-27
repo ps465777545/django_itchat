@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+    <div class="layui-body">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend><h2>在扫描二维码之前，请确保您想添加的群组已经在通讯录中存在,步骤如下图</h2></legend>
+        </fieldset>
+
+        <button class="layui-btn get_qr_code">获取二维码</button>
+        <button class="layui-btn message_collector">消息采集</button>
+
+        <h1>Step1</h1>
+        <img src="{% static 'image/1552049985676.jpg' %}" alt="">
+        <h1>Step2</h1>
+        <img src="{% static 'image/WechatIMG6.jpeg' %}" alt="">
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/layer.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/echarts.min.js' %}" charset="utf-8"></script>
+    <script>
+
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+        layui.config({
+            base: '{% static 'layui' %}/'
+        }).use(['transfer'], function () {
+
+
+            $('.get_qr_code').on('click', function () {
+                layer.open({
+                    type: 3
+                })
+                $.ajax({
+                    url: '{% url 'create_group' %}',
+                    method: 'post',
+                    success: function (res) {
+                        layer.open({
+                            content: '共添加' + res.count + '个群'
+                        });
+                        layer.closeAll();
+                        layer.open({
+                            title: "成功添加群",
+
+                            content: res.name_list.join('</br>')
+                        });
+
+                    }
+                });
+                $.ajax({
+                    url: '{% url 'qr_img' %}',
+                    method: 'post',
+                    success: function (res) {
+                        s = 'data:image/png;base64,' + res.img;
+                        var img = '<img src=' + s + '>';
+                        layer.open({
+                            type: 1,//Page层类型
+                            offset: ['200px'],
+                            title: '请扫码',
+                            shade: 0.6,//遮罩透明度
+                            anim: 1,//0-6的动画形式，-1不开启
+                            content: img
+                        });
+                    }
+                })
+            })
+
+
+            $('.message_collector').on('click', function () {
+
+
+                $.ajax({
+                    url: '{% url 'wxMessage' %}',
+                    method: 'post',
+                    success: function () {
+                    }
+                });
+                $.ajax({
+                    url: '{% url 'qr_img' %}',
+                    method: 'post',
+                    success: function (res) {
+                        s = 'data:image/png;base64,' + res.img;
+                        var img = '<img src=' + s + '>';
+                        layer.open({
+                            type: 1,//Page层类型
+                            offset: ['200px'],
+                            title: '请扫码',
+                            shade: 0.6,//遮罩透明度
+                            anim: 1,//0-6的动画形式，-1不开启
+                            content: img
+                        });
+                    }
+                })
+            })
+        })
+    </script>
+{% endblock %}

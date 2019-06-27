@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+
+{% block body %}
+    <div class="layui-body">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>发送列表（确保发送者微信中的群名与任务中的群名保持一致，否则将发送失败）</legend>
+        </fieldset>
+        <table class="layui-hide" id="check" lay-filter="check"></table>
+
+
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/layer.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/echarts.min.js' %}" charset="utf-8"></script>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="send">发送</a>
+        <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</a>
+    </script>
+    <script type="text/html" id="toolbarDelete">
+        <div class="layui-btn-container">
+            <button class="layui-btn layui-btn-sm" lay-event="all_delete">一键删除</button>
+        </div>
+    </script>
+    <script type="text/html" id="sexTpl">
+        {% verbatim %}
+
+        {{#  if(d.status === '待审核'){ }}
+        <span style="color: #f5511c;">{{ d.status }}</span>
+        {{# } else if(d.status === '审核通过'){ }}
+        <span style="color: #1c94ef;">{{ d.status }}</span>
+        {{#  } else { }}
+        <span style="color: #45f51c;">{{ d.status }}</span>
+        {{#  } }}
+
+        {% endverbatim %}
+    </script>
+        <script type="text/html" id="message">
+        {% verbatim %}
+        {{#  if(d.message_type === '文字'){ }}
+        <span>{{ d.message }}</span>
+        {{#  } else { }}
+        <span>{{ d.message }}<a style="color: #145fe7;" href="/static/media/{{  d.fie_yuanben  }}">(点击查看)</a></span>
+        {{#  } }}
+
+        {% endverbatim %}
+    </script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+        layui.use('table', function () {
+            var table = layui.table;
+
+            table.render({
+                elem: '#check',
+                method: 'post',
+                toolbar: '#toolbarDelete',
+                url: '{% url 'check_list' %}',
+                cols: [[
+                    {type: 'checkbox', fixed: 'left'},
+                    {field: 'id', width: 50, title: 'ID'},
+                    {field: 'message', midth: 100, title: '信息',templet: '#message'},
+                    {field: 'message_type', width: 80, title: '信息类型'},
+                    {field: 'group', minWidth: 80, title: '群组'},
+                    {field: 'typ', width: 80, title: '类型'},
+                    {field: 'status', midth: 80, title: '状态', templet: '#sexTpl'},
+                    {field: 'date', title: '添加时间', minWidth: 100, sort: true},
+                    {title: '操作', toolbar: '#barDemo', minWidth: 150}
+                ]]
+            });
+
+            table.on('tool(check)', function (obj) {
+                var data = obj.data;
+                if (obj.event === 'send') {
+                    sta = data.status;
+                    if (sta === '审核通过') {
+                        layer.open({
+                            type:3
+                        })
+                        // 发送
+                        $.ajax({
+                            url: '{% url 'send' %}',
+                            method: 'post',
+                            data: {
+                                message: data.message,
+                                id: data.id,
+                                group_name: data.group,
+                                message_type:data.message_type,
+                                uuid:data.uuid
+                            },
+                            success: function (res) {
+                                layer.closeAll();
+                                window.location.reload();
+                            }
+                        });
+                        $.ajax({
+                            url: '{% url 'qr_img' %}',
+                            method: 'post',
+                            success: function (res) {
+                                s = 'data:image/png;base64,' + res.img;
+                                var img = '<img src=' + s + '>';
+                                layer.open({
+                                    type: 1,//Page层类型
+                                    offset: ['200px'],
+                                    title: '请扫码',
+                                    shade: 0.6,//遮罩透明度
+                                    anim: 1,//0-6的动画形式，-1不开启
+                                    content: img
+                                });
+                            }
+                        })
+                    } else if (sta === '待审核') {
+                        layer.open({
+                            title: '提示'
+                            , content: '该条信息未审核，请先审核后再发送！'
+                        });
+                    } else {
+                        layer.open({
+                            title: '提示'
+                            , content: '该条信息已发送，请勿再次发送！'
+                        });
+                    }
+
+                } else if (obj.event === 'delete') {
+                    layer.open({
+                        title: '提示'
+                        , content: '确定删除该条记录？',
+                        yes: function (layero, index) {
+                            $.ajax({
+                                url: '{% url 'delete_task' %}',
+                                method: 'post',
+                                data: {
+                                    id: data.id
+                                },
+                                success: function (res) {
+                                    window.location.reload();
+                                }
+                            })
+                        }
+                    });
+
+                }
+            });
+            //一键删除事件
+            table.on('toolbar(check)', function (obj) {
+                var checkStatus = table.checkStatus(obj.config.id);
+                if (obj.event === 'all_delete') {
+                    var data = checkStatus.data;
+                    if (data.length !== 0) {
+                        id_list = [];
+                        for (var i = 0; i < data.length; i++) {
+                            id_list.push(data[i].id)
+                        }
+                        layer.open({
+                            title: '提示',
+                            content: '确定删除选中项？',
+                            yes: function () {
+                                $.ajax({
+                                    url: '{% url 'delete_task' %}',
+                                    method: 'post',
+                                    data: {
+                                        id: JSON.stringify(id_list),
+                                        typ: 'all_delete'
+                                    },
+                                    success: function (res) {
+                                        if (res.status) {
+                                            layer.open({
+                                                title: '提示',
+                                                content: res.msg,
+                                                yes: function () {
+                                                    window.location.reload();
+                                                }
+                                            })
+                                        } else {
+                                            layer.open({
+                                                title: '提示',
+                                                content: res.msg
+                                            })
+                                        }
+
+                                    }
+                                })
+                            }
+                        })
+                    } else {
+                        layer.open({
+                            title: '提示',
+                            content: '没有勾选任何群！'
+                        })
+                    }
+                }
+            });
+        });
+    </script>
+{% endblock %}

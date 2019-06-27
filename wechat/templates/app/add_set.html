@@ -1,0 +1,126 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加组</title>
+    <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/layer.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/echarts.min.js' %}" charset="utf-8"></script>
+</head>
+<body>
+<div class="layui-body">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>新建组</legend>
+    </fieldset>
+
+    <form class="layui-form layui-form-pane" action="">
+
+        <div class="layui-container">
+            <div class="layui-form-item">
+                <label class="layui-form-label">组名</label>
+                <div class="layui-input-block">
+                    <input type="text" id="set_name" name="set_name" autocomplete="off" placeholder="请输入组名"
+                           class="layui-input">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="root">
+
+    </div>
+    <div class="layui-btn-group layui-container">
+        <button class="layui-btn submit_check">提交</button>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+    // 穿梭框
+    layui.config(
+        {
+            base: '{% static 'layui' %}/'
+        }
+    ).use(['transfer'], function () {
+        var transfer = layui.transfer, $ = layui.$;
+        //数据源
+        var data1 = [];
+        {% for d in data %}
+            data1.push(
+                {
+                    'id': '{{ d.id }}',
+                    'name': '{{ d.name }}',
+                    'owner': '{{ d.owner }}',
+                    'users': '{{ d.users_num }}',
+                }
+            );
+        {% endfor %}
+
+        var data2 = [];
+        //表格列
+        var cols = [
+            {type: 'checkbox', fixed: 'left'},
+            {field: 'name', title: '群名'},
+            //{field: 'owner', title: '群主'},
+            {field: 'users', title: '人数'},
+
+        ];
+        //表格配置文件
+        var tabConfig = {'page': true, 'limits': [10, 50, 100], 'height': 450};
+
+        var tb1 = transfer.render({
+            elem: "#root", //指定元素
+            cols: cols, //表格列  支持layui数据表格所有配置
+            data: [data1, data2], //[左表数据,右表数据[非必填]]
+            tabConfig: tabConfig //表格配置项 支持layui数据表格所有配置
+        });
+        $('.submit_check').on('click', function () {
+            var data = transfer.get(tb1, 'r');
+            group_list = [];
+            for (var i = 0; i < data.length; i++) {
+                group_list.push(data[i].id)
+            }
+
+            if(group_list.length!==0){
+                $.ajax({
+                url: "{% url 'add_set' %}",
+                method: 'post',
+                data: {
+                    set_name: $('#set_name').val(),
+                    group_name: JSON.stringify(group_list)
+                },
+                success: function (res) {
+                    if (res.status) {
+                        layer.open({
+                            title: '提示',
+                            content: res.msg,
+                            yes: function () {
+                                // 刷新父页面
+                                window.parent.location.reload();
+                            }
+                        });
+                    } else {
+                        alert(res.msg)
+                    }
+
+                }
+            })
+            }else {
+                layer.open({
+                    title:'提示',
+                    content: '请选择群后再提交！'
+                })
+            }
+
+        })
+
+    });
+</script>
+</html>

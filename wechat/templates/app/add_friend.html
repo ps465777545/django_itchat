@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+    <div class="layui-body">
+
+        <form class="layui-form layui-form-pane" action="">
+
+                <div class="layui-upload layui-inline" id="down">
+                    <button type="button" class="layui-btn" id="download_temp" onclick="downloadTemp()">
+                        <i class="layui-icon layui-icon-download-circle"></i>下载模板
+                    </button>
+                </div>
+                <div class="layui-upload layui-inline" id="file">
+                    <button type="button" class="layui-btn" id="up_file">
+                        <i class="layui-icon layui-icon-file-b"></i>选择文件
+                    </button>
+                </div>
+
+                <div class="layui-upload-list">
+                    <p id="msg_text"></p>
+                </div>
+
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+
+        // 下载模板
+        function downloadTemp() {
+            layui.use('table', function () {
+                var table = layui.table;
+                table.exportFile(['username'], [['']], 'csv');
+
+            })
+        }
+
+        // 上传附件
+
+        layui.use('upload', function () {
+            $ = layui.jquery;
+            upload = layui.upload;
+            // 上传文件
+            upload.render({
+                elem: '#up_file',
+                url: '{% url 'add_friend' %}',
+                method: 'post',
+                accept: 'file',
+                acceptMime: '.csv',
+                before: function (obj) {
+                    layer.load();
+
+                },
+                done: function (res, index, upload) {
+                    layer.closeAll('loading');
+                    $('#msg_text').html(res.msg)
+
+
+                }
+
+            });
+        })
+
+    </script>
+
+
+{% endblock %}

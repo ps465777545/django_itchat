@@ -1,0 +1,110 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% block title %}
+        微信群发助手
+    {% endblock %}
+    </title>
+    {% block header %}
+        <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% endblock %}
+    {% block sty %}
+        <style>
+            .textbox {
+                background: #23262E;
+                font-size: 20px;
+                color: #00FF00;
+                width: 100%;
+                height: 95%;
+                border: solid 1px #23262E;
+            }
+        </style>
+    {% endblock %}
+
+</head>
+<body class="layui-layout-body" style="height: 100%">
+<div class="layui-layout layui-layout-admin" style="height: 100%">
+    <div class="layui-header">
+        <div class="layui-logo">
+            {% block nana %}
+                微信群发助手
+            {% endblock %}
+
+        </div>
+
+        <ul class="layui-nav layui-layout-left">
+
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            {% block fanye %}
+
+            {% endblock %}
+
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="{% static 'image/favicon.ico' %}" class="layui-nav-img">
+                    {{ request.user }}
+                </a>
+                {#                {% if request.user.is_superuser %}#}
+                {#                    <dl class="layui-nav-child">#}
+                {#                        <dd><a href="{% url 'index' %}">数据报表</a></dd>#}
+                {#                        <dd><a href="{% url 'AdminPage' %}">用户管理</a></dd>#}
+                {# <dd><a href="">安全设置</a></dd>#}
+                {#                    </dl>#}
+                {#                {% endif %}#}
+            </li>
+            <li class="layui-nav-item"><a href="{% url 'logout' %}">退出</a></li>
+        </ul>
+    </div>
+
+    {% block daohang %}
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree">
+                    <li class="layui-nav-item">
+                        <a href="{% url 'create_group' %}">添加群</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="{% url 'get_group_list' %}">群组管理</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="{% url 'check_list' %}">审核列表</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="{% url 'check' %}">审核</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="{% url 'send' %}">发送</a>
+                    </li>
+                     <li class="layui-nav-item">
+                        <a href="{% url 'add_friend' %}">添加好友</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    {% endblock %}
+    {% block body %}
+
+    {% endblock %}
+
+
+
+</div>
+<script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+{% block script %}
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+    </script>
+
+
+{% endblock %}
+</body>
+</html>

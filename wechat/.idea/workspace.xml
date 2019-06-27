@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3879600-cfeb-468c-9119-afde953ad150" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/laydate/default/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/icon/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/css/plug/tablePlug.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/all-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile/layer-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile/layim-mobile-open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile/upload-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile/zepto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/icon/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/optimizeSelectOption/optimizeSelectOption.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/optimizeSelectOption/optimizeSelectOption.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/optimizeSelectOption/optimizeSelectOption.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/tablePlug.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/tablePlug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tablePlug/tablePlug.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/templates/bbcd/meirizhanbao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/templates/bbcd/meirizhanbao_ifr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/website/fomat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/website/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../website/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/log/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/../website/log/all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/proxy/sql_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/proxy/sql_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/proxy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/proxy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/proxy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/proxy/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/layui.mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/font/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/20.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/23.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/26.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/30.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/32.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/35.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/39.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/42.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/45.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/48.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/51.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/54.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/57.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/60.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/63.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/67.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/71.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/images/face/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/images/face/9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laydate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/layedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laypage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/rate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/lay/modules/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/layui.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/statics/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/statics/layui/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/baobaochudan.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/baobaochudan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/tools/es.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/tools/es.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/userLevel/today_data_userlevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/userLevel/today_data_userlevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/userLevel/userLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/userLevel/userLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/zb_index_bbcd.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/zb_index_bbcd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/tools/sql_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/tools/sql_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/tools/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/tools/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/tools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/tools/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/userManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/userManage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/website/aaa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/aaa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wechat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wechat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statics/js/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/statics/js/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/check.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app/create_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/create_group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app/group_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/group_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app/set_send.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/set_send.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/aaa.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/aaa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/middleware.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/wechat$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1553513183393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/wechat$views.coverage" NAME="views Coverage Results" MODIFIED="1551950115152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/wechat$group.coverage" NAME="group Coverage Results" MODIFIED="1553247359338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wechat" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat/middleware.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/check.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="98" column="46" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+              <folding>
+                <element signature="e#630#662#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/group_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wechat/aaa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/check_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/create_group.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1410">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>submit</find>
+      <find>file_text</find>
+      <find>check_list</find>
+      <find>#*</find>
+      <find>webwxgetvoice</find>
+      <find>upload</find>
+      <find>ret</find>
+      <find>uploadInst</find>
+      <find>videos</find>
+      <find />
+      <find>uuid</find>
+      <find>split</find>
+      <find>group_list</find>
+      <find>smart_map</find>
+      <find>check_response_body</find>
+      <find>get_chatrooms</find>
+      <find>email.utils.encode_rfc2231</find>
+      <find>up_video</find>
+      <find>print</find>
+      <find>DateField</find>
+      <find>up_file</find>
+      <find>send_video</find>
+      <find>layui-container</find>
+      <find>qr_img</find>
+      <find>编辑</find>
+      <find>check</find>
+      <find>tool</find>
+      <find>task.obj</find>
+      <find>pass</find>
+      <find>get_qr_code</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/templates/app/send.html" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/app/create_group.html" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/app/group_list.html" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/views.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/statics/layui/transfer.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/forbidden.html" />
+        <option value="$PROJECT_DIR$/conf.py" />
+        <option value="$PROJECT_DIR$/wechat/a" />
+        <option value="$PROJECT_DIR$/wechat/urls.py" />
+        <option value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/group.py" />
+        <option value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/utils/misc.py" />
+        <option value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/urllib3/fields.py" />
+        <option value="$PROJECT_DIR$/app/admin.py" />
+        <option value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/components/messages.py" />
+        <option value="$PROJECT_DIR$/wechat/settings.py" />
+        <option value="$PROJECT_DIR$/wechat/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/app/add_friend.html" />
+        <option value="$PROJECT_DIR$/templates/app/edit_set.html" />
+        <option value="$PROJECT_DIR$/templates/app/add_set.html" />
+        <option value="$PROJECT_DIR$/templates/app/check_list.html" />
+        <option value="$PROJECT_DIR$/templates/app/send.html" />
+        <option value="$PROJECT_DIR$/templates/app/set_send.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/app/group_list.html" />
+        <option value="$PROJECT_DIR$/wechat/aaa.py" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/templates/app/check.html" />
+        <option value="$PROJECT_DIR$/wechat/middleware.py" />
+        <option value="$PROJECT_DIR$/statics/js/layer.js" />
+        <option value="$PROJECT_DIR$/templates/app/create_group.html" />
+        <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/app/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="256" />
+    <option name="y" value="116" />
+    <option name="width" value="1378" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/statics/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wechat" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/statics" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/statics/image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.wechat">
+    <configuration name="aaa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wechat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/aaa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="group" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wechat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/group.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wechat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wechat" type="Python.DjangoServer" factoryName="Django server">
+      <module name="wechat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="wechat.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.wechat" />
+      <item itemvalue="Python.aaa" />
+      <item itemvalue="Python.group" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.aaa" />
+        <item itemvalue="Python.group" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3879600-cfeb-468c-9119-afde953ad150" name="Default Changelist" comment="" />
+      <created>1551944089649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551944089649</updated>
+      <workItem from="1551944091985" duration="1093000" />
+      <workItem from="1551949976619" duration="4326000" />
+      <workItem from="1552015598238" duration="4167000" />
+      <workItem from="1552031232814" duration="21023000" />
+      <workItem from="1552286992927" duration="27678000" />
+      <workItem from="1552456753591" duration="5295000" />
+      <workItem from="1552548360570" duration="1889000" />
+      <workItem from="1552612572568" duration="22195000" />
+      <workItem from="1552786350861" duration="121000" />
+      <workItem from="1552886797707" duration="867000" />
+      <workItem from="1552894309270" duration="660000" />
+      <workItem from="1553052854121" duration="593000" />
+      <workItem from="1553134445501" duration="3365000" />
+      <workItem from="1553149666240" duration="330000" />
+      <workItem from="1553160917798" duration="647000" />
+      <workItem from="1553233271759" duration="32064000" />
+      <workItem from="1553582101893" duration="3911000" />
+      <workItem from="1553594293215" duration="312000" />
+      <workItem from="1553598865452" duration="5252000" />
+      <workItem from="1553740943260" duration="2981000" />
+      <workItem from="1553828822923" duration="528000" />
+      <workItem from="1554083398781" duration="241000" />
+      <workItem from="1558081040515" duration="643000" />
+      <workItem from="1558156845952" duration="4288000" />
+      <workItem from="1558947075848" duration="1177000" />
+      <workItem from="1559272644810" duration="442000" />
+      <workItem from="1560848876111" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="146102000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49541286" visible="true" weight="0.18669528" />
+      <window_info id="Structure" order="1" sideWeight="0.5018382" side_tool="true" weight="0.16809729" />
+      <window_info id="Favorites" order="2" sideWeight="0.5045872" side_tool="true" weight="0.16380544" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3952912" />
+      <window_info anchor="bottom" x="13" y="345" width="1398" height="480" id="Debug" order="3" weight="0.44361833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.30607188" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.28004956" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32961586" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32961586" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32961586" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" sideWeight="0.49928468" weight="0.32961586" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../python3_venv/lib/python3.7/site-packages/wxpy/api/bot.py</url>
+          <line>425</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/group.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/views.py</url>
+          <line>732</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="groups.0.user_name" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>response_body['BaseResponse']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../python3_venv/lib/python3.7/site-packages/itchat/config.py" />
+    <entry file="file://$PROJECT_DIR$/../../python3_venv/lib/python3.7/site-packages/itchat/utils.py" />
+    <entry file="file://$PROJECT_DIR$/../../python3_venv/lib/python3.7/site-packages/itchat/components/messages.py" />
+    <entry file="file://$PROJECT_DIR$/../../python3_venv/lib/python3.7/site-packages/wxpy/api/bot.py" />
+    <entry file="das://6362e8cd-5f06-4669-900f-eec04ebfd882/schema/main/table/app_file" />
+    <entry file="file://$PROJECT_DIR$/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/groups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/messages/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="864" selection-start-line="864" selection-end-line="864" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#16#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/utils/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="517" selection-start-line="517" selection-end-line="517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/components/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6331">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="238" column="4" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/urllib3/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/wxpy/api/chats/chat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="207" column="8" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views_bak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="507" column="53" selection-start-line="507" selection-start-column="53" selection-end-line="507" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/storage/templates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="291" column="8" selection-start-line="291" selection-start-column="8" selection-end-line="291" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/components/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="445" selection-start-line="445" selection-end-line="482" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/components/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/itchat/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="460" column="12" lean-forward="true" selection-start-line="460" selection-start-column="12" selection-end-line="460" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/media/add_friend_table_ (1).csv" />
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/add_friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/add_set.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/edit_set.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/send.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3_venv/lib/python3.7/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="838" column="8" selection-start-line="838" selection-start-column="8" selection-end-line="838" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/set_send.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/js/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/ea059542a87571588b99e9ae477fc76f/Message/MessageTemp/47db44235a1638d9906c21aa3ab31724/File/views.py" />
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10815">
+          <caret line="733" selection-start-line="733" selection-end-line="733" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="46" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/group_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/check_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/create_group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

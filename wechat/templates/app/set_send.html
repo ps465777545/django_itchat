@@ -1,0 +1,238 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组发</title>
+    <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/layer.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/echarts.min.js' %}" charset="utf-8"></script>
+</head>
+<body>
+<div class="layui-container">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>组发</legend>
+    </fieldset>
+    <div class="layui-btn-group layui-container">
+        <button class="layui-btn submit_check">提交审核</button>
+
+    </div>
+    <div id="root">
+
+    </div>
+    <form class="layui-form layui-form-pane" action="">
+        <div class="layui-container">
+            <div class="layui-form-item" pane="">
+                <!--todo-->
+                <label class="layui-form-label">发送类型</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="send" value="text" title="文本" checked=""
+                           lay-filter="check">
+                    <input type="radio" name="send" value="file" title="文件" lay-filter="check">
+                    <input type="radio" name="send" value="picture" title="图片" lay-filter="check">
+                    <input type="radio" name="send" value="video" title="视频" lay-filter="check">
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text" id="text">
+                <label class="layui-form-label">群发消息</label>
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入内容" class="layui-textarea" id="message"></textarea>
+                </div>
+            </div>
+            <div class="layui-upload" id="picture" hidden>
+                <button type="button" class="layui-btn" id="up_picture"><i
+                        class="layui-icon  layui-icon-picture"></i>选择图片
+                </button>
+                <div class="layui-upload-list">
+                    <img class="layui-upload-img" id="demo1" style="height: 200px;width: 200px">
+                </div>
+            </div>
+            <div class="layui-upload" id="file" hidden>
+                <button type="button" class="layui-btn" id="up_file"><i
+                        class="layui-icon layui-icon-file-b"></i>选择文件
+                </button>
+            </div>
+            <div class="layui-upload" id="video" hidden>
+                <button type="button" class="layui-btn" id="up_video"><i
+                        class="layui-icon layui-icon-upload"></i>选择视频
+                </button>
+            </div>
+            <div class="layui-upload-list">
+                <p id="msg_text"></p>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+</body>
+<script>
+    var uuid = '{{ uuid }}'
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+    // 穿梭框
+    layui.config(
+        {
+            base: '{% static 'layui' %}/'
+        }
+    ).use(['transfer'], function () {
+        var transfer = layui.transfer, $ = layui.$;
+
+        var data2 = [];
+        {% for d in set %}
+            data2.push(
+                {
+                    'id': '{{ d.id }}',
+                    'name': '{{ d.set_name }}',
+                    'group_names': '{{ d.group_names }}',
+                    'num': '{{ d.num }}',
+                }
+            );
+        {% endfor %}
+        //表格列
+        var cols_set = [
+            {type: 'checkbox', fixed: 'left'},
+            {field: 'name', title: '组名'},
+            {field: 'group_names', title: '群名'},
+            {field: 'num', title: '群个数'},
+
+        ];
+        //表格配置文件
+
+        var tabConfig1 = {'page': true, 'limits': [10, 50, 100], 'height': 450};
+        var tb2 = transfer.render({
+            elem: "#root", //指定元素
+            cols: cols_set, //表格列  支持layui数据表格所有配置
+            data: [data2, []], //[左表数据,右表数据[非必填]]
+            tabConfig: tabConfig1 //表格配置项 支持layui数据表格所有配置
+        });
+
+
+        $('.submit_check').on('click', function () {
+            var data = transfer.get(tb2, 'r');
+            console.log(data);
+            set_list = [];
+            for (var i = 0; i < data.length; i++) {
+                set_list.push(data[i].id)
+            }
+            $.ajax({
+                url: "{% url 'add_task' %}",
+                method: 'post',
+                data: {
+                    content: $('#message').val(),
+                    group_name: JSON.stringify(set_list),
+                    type: 'set',
+
+                    send_type: send_type,
+                    uuid: uuid
+                },
+                success: function (res) {
+                    if (res.status) {
+                        alert(res.msg);
+                        window.location.reload();
+                    } else {
+                        alert(res.msg)
+                    }
+
+                }
+            })
+        })
+
+    });
+
+    // 复选框
+    send_type = 'text'
+    layui.use('form', function () {
+        var form = layui.form;
+        form.on('radio(check)', function (data) {
+            value = data.elem.value; //得到checkbox原始DOM对象
+            send_type = value
+            if (value === 'text') {
+                $('#text').show()
+                $('#picture').hide()
+                $('#video').hide()
+                $('#file').hide()
+            } else if (value === 'picture') {
+                $('#text').hide()
+                $('#picture').show()
+                $('#video').hide()
+                $('#file').hide()
+            } else if (value === 'video') {
+                $('#text').hide()
+                $('#picture').hide()
+                $('#video').show()
+                $('#file').hide()
+            } else if (value === 'file') {
+                $('#text').hide()
+                $('#picture').hide()
+                $('#video').hide()
+                $('#file').show()
+            }
+        });
+    })
+
+    layui.use('upload', function () {
+        $ = layui.jquery;
+        upload = layui.upload;
+        // 上传图片
+        var uploadInst = upload.render({
+            elem: '#up_picture',
+            url: '{% url 'upload' %}?uuid=' + uuid,
+            method: 'post',
+            accept: 'images',
+            acceptMime: 'image/*',
+            size:5120,
+            before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    layer.load();
+                    $('#demo1').attr('src', result); //图片链接（base64）
+                });
+            },
+            done: function (res, index, upload) {
+                layer.closeAll('loading');
+                $('#msg_text').html(res.msg)
+            }
+
+        });
+        // 上传文件
+        upload.render({
+            elem: '#up_file',
+            url: '{% url 'upload' %}?uuid=' + uuid,
+            method: 'post',
+            accept: 'file',
+            size:10240,
+            before: function (obj) {
+                layer.load();
+            },
+            done: function (res, index, upload) {
+                layer.closeAll('loading');
+                $('#msg_text').html(res.msg)
+
+
+            }
+
+        });
+
+        // 上传视频
+        upload.render({
+            elem: '#up_video',
+            url: '{% url 'upload' %}?uuid=' + uuid,
+            method: 'post',
+            accept: 'video',
+            acceptMime: 'video/*',
+            size:20480,
+            before: function (obj) {
+                layer.load();
+            },
+            done: function (res, index, upload) {
+                layer.closeAll('loading');
+                $('#msg_text').html(res.msg)
+            }
+        });
+    })
+</script>
+</html>

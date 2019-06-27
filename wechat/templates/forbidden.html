@@ -1,0 +1,10 @@
+
+
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="layui-body">
+        <h1>权限不足（如果已开通权限，请退出重新登录即可！）</h1> <br><a href="{% url 'logout' %}">重新登录</a>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block body %}
+    <div class="layui-body">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>审核列表</legend>
+        </fieldset>
+        <table class="layui-hide" id="check_list"></table>
+
+
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/layer.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/echarts.min.js' %}" charset="utf-8"></script>
+    <script type="text/html" id="sexTpl">
+        {% verbatim %}
+
+        {{#  if(d.status === '待审核'){ }}
+        <span style="color: #f5511c;">{{ d.status }}</span>
+        {{# } else if(d.status === '审核通过'){ }}
+        <span style="color: #1c94ef;">{{ d.status }}</span>
+        {{#  } else { }}
+        <span style="color: #45f51c;">{{ d.status }}</span>
+        {{#  } }}
+
+        {% endverbatim %}
+    </script>
+    <script type="text/html" id="message">
+        {% verbatim %}
+        {{#  if(d.message_type === '文字'){ }}
+        <span>{{ d.message }}</span>
+        {{#  } else { }}
+        <span>{{ d.message }}<a style="color: #145fe7;" href="/static/media/{{  d.fie_yuanben  }}">(点击查看)</a></span>
+        {{#  } }}
+
+        {% endverbatim %}
+    </script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+        layui.use('table', function () {
+            var table = layui.table;
+
+            table.render({
+                elem: '#check_list',
+                method: 'post',
+                url: '{% url 'check_list' %}',
+                cols: [[
+                    {field: 'id', width: 80, title: 'ID'},
+                    {field: 'message', minWidth: 80, title: '信息', templet: '#message'},
+                    {field: 'message_type', midth: 80, title: '信息类型'},
+                    {field: 'group', minWidth: 80, title: '群组'},
+                    {field: 'typ', midth: 80, title: '类型'},
+                    {field: 'status', midth: 80, title: '状态', templet: '#sexTpl'},
+                    {field: 'date', title: '添加时间', minWidth: 100, sort: true}
+                ]]
+            });
+        });
+    </script>
+{% endblock %}
