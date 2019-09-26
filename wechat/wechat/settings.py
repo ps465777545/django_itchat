@@ -46,7 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'wechat.middleware.MyPermission',
+    # 'wechat.middleware.MyPermission',
 ]
 
 ROOT_URLCONF = 'wechat.urls'
